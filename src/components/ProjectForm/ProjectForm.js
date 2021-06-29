@@ -126,7 +126,7 @@ const ProjectForm = (props) => {
                 </div>
 
                 <div className="form-page__form__images">
-                    {/* <label htmlFor='images'>Attach Images</label> */}
+                    {/* Not adding drag and drop for now */}
                     <input
                         type="button"
                         onClick={onImageUploadHandler}

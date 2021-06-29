@@ -29,8 +29,8 @@ const Projects = (props) => {
             {project ?
                 <div className="project">
                     <img alt='Project'
-                        src={project.images[0] && URL.createObjectURL(project.images[0])}
-                        className="project__main-image"
+                        src={project.images[0] ? URL.createObjectURL(project.images[0]):'/project-management.svg'}
+                        className={project.images[0] ? "project__main-image": "project__no-image"} //Handling if user doesn't add any image
                     /> {/*Using the first image*/}
                     <div className="project__head-wrapper">
                         <div className="project__title">

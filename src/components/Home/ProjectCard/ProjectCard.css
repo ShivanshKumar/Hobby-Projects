@@ -21,6 +21,12 @@
     object-fit: cover;
 }
 
+.card__no-image{
+    width: 280px;
+    height: 180px;
+    padding:10px;
+}
+
 .card__body{
     border-top: 1px solid #9DA0AB;
 }

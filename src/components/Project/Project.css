@@ -147,6 +147,13 @@
     cursor: pointer;
 }
 
+.project__no-image{
+    width: 100%;
+    height: 300px;
+    background: #ffffffe6;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 660px) {
     .project__images{
         justify-content: center;

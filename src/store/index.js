@@ -7,7 +7,6 @@ const initialState = { projects: [], currentProject: undefined, notification: un
 const formActionReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'ADD_PROJECT': {
-            console.log(action)
             const projectsCopy = [...state.projects]; // For updating store in an immutable way
             projectsCopy.push({
                 id: Math.floor(Math.random() * 1000),
@@ -31,11 +30,7 @@ const formActionReducer = (state = initialState, action) => {
                 id: action.payload.id,
                 title: action.payload.title,
                 description: action.payload.description,
-                images: action.payload.images ? //Checking if user wants to add more images or not
-                    action.payload.images
-                    :
-                    projectsCopy[projectIndex].images
-                //Not adding the feature of deleting images as of now
+                images: action.payload.images
             };
 
             projectsCopy[projectIndex] = editedProject;

@@ -18,10 +18,10 @@ const ProjectCard = (props) => {
         <div className="card">
             <img
                 alt='Project'
-                className="card__image"
-                src={project.images[0] && URL.createObjectURL(project.images[0])}
+                className={project.images[0] ? "card__image" : "card__no-image"} //Handling if user doesn't add any image
+                src={project.images[0] ? URL.createObjectURL(project.images[0]) : '/project-management.svg'}
             /> {/*Using the first image*/}
-            <div className="card__body">
+            < div className="card__body">
                 <div className="card__body__details">
                     <div className="card__body__title">
                         <span>{project.title}</span>

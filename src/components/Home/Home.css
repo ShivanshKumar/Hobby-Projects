@@ -1,0 +1,115 @@
+.notifications {
+    background-color: #1ad1b9;
+}
+
+.notifications h2 {
+    font-size: 15px;
+    margin: 0;
+    padding: 10px;
+}
+
+.project-header {
+    padding: 10px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffab;
+}
+
+.project-header__title {
+    font-size: 50px;
+    font-family: 'Montserrat', 'system-ui', 'Segoe UI';
+}
+
+.project-header__button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    color: #FFF;
+    font-size: 20px;
+    background-color: #3C73FF;
+    border: none;
+    font-family: 'Montserrat', 'system-ui', 'Segoe UI';
+}
+
+.project-header__button:hover {
+    box-shadow: 0 0 5px 5px #3C73FF;
+    /* border-radius: 100px; */
+    background: none;
+    color: #3C73FF;
+    cursor: pointer;
+}
+
+.project-cards{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    margin: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.project__add-card{
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 6px 15px 0px #ccc;
+    width: 300px;
+    margin: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffffab;
+    transition: 0.5s ease-in-out;
+}
+
+.project__add-card:hover{
+    transform: translateY(-15px);
+}
+
+.project__add-card__button{
+    border: none;
+    padding: 0;
+    border-radius: 15px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__add-card__img{
+    transition: 0.5s ease-in-out;
+    height: 150px;
+}
+
+.project__add-card__img:hover{
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .project-cards{
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    .project-header__title{
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .project-header__button{
+        font-size: 15px;
+    }
+
+}
+  
